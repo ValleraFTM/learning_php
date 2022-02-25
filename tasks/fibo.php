@@ -2,7 +2,7 @@
 
 // функция checkFibo проверяет, является 
 // ли число $num числом фибоначчи 
-function  checkFibo(int $num)
+function  checkFibo(int $num) : bool
 {
     $n1 = (5*($num**2)-4)**0.5;
     $n2 = (5*($num**2)+4)**0.5;
@@ -12,7 +12,7 @@ function  checkFibo(int $num)
 }
 
 // функция прохождения по массиву
-function countNum(array $arr)
+function countNum(array $arr) : int
 {
     $summ =0;
     foreach($arr as $elem)
