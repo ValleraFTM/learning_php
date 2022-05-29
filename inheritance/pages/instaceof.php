@@ -3,7 +3,7 @@ require_once "StaticPage.php";
 function echoPage($obj)
 {
     $class = 'Page';
-    if (!($obj instaceof $class)){
+    if (!($obj instanceof $class)){
     die("Argument 1 must be an instance of $class.<br />");
     }
     $obj->render();
