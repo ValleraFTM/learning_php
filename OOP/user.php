@@ -13,6 +13,10 @@
         {
             return ['name', 'referrer', 'time'];
         }
+        public function __wakeup()
+        {
+            $this->time = time();
+        }
         // user.name
         public $name;
         // user.password
